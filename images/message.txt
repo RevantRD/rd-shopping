@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+ 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        span{
+            color: orangered;
+        }
+        .container h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>All Products</h1>
+        <div class="row">
+            
+         <div class="col-md-2 mb-1 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="All products/pink dress.jpg" class="card-img-top" alt="Pink dress">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Pink Dress</b></h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectet</p>
+                        <p class="card-text">$20.99</p>
+                        <button type="button" class="btn btn-default btn-sm">
+                            <span class="glyphicon
+                                glyphicon-shopping-cart">
+                            </span>
+                            <b> Add to Cart </b>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-2 mb-1 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="All products/maroon dress.jpg" class="card-img-top" alt="Maroon dress">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Maroon Dress</b></h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectet</p>
+                        <p class="card-text">$25.99</p>
+                        <button type="button" class="btn btn-default btn-sm">
+                            <span class="glyphicon
+                                glyphicon-shopping-cart">
+                            </span>
+                            <b> Add to Cart </b>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 mb-1 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="All products/pink kurti.webp" class="card-img-top" alt="Pink Kurti">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Pink Kurti</b></h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectet</p>
+                        <p class="card-text">$50.99</p>
+                        <button type="button" class="btn btn-default btn-sm">
+                            <span class="glyphicon
+                                glyphicon-shopping-cart">
+                            </span>
+                            <b> Add to Cart </b>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-1 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="All products/yellow kurti.jpg" class="card-img-top" alt="yellow Kurti">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Yellow Kurti</b> </h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectet</p>
+                        <p class="card-text">$50.99</p>
+                        <button type="button" class="btn btn-default btn-sm">
+                            <span class="glyphicon
+                                glyphicon-shopping-cart">
+                            </span>
+                            <b> Add to Cart </b>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 mb-1 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="All products/checked skirt.avif" class="card-img-top" alt="checked skirt">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Checked Skirt</b> </h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectet</p>
+                        <p class="card-text">$50.99</p>
+                        <button type="button" class="btn btn-default btn-sm">
+                            <span class="glyphicon
+                                glyphicon-shopping-cart">
+                            </span>
+                            <b> Add to Cart </b>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 mb-1 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="All products/yellow skirt.avif" class="card-img-top" alt="yellow skirt">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Yellow Skirt</b> </h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectet</p>
+                        <p class="card-text">$50.99</p>
+                        <button type="button" class="btn btn-default btn-sm">
+                            <span class="glyphicon
+                                glyphicon-shopping-cart">
+                            </span>
+                            <b> Add to Cart </b>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+    <script>
+        let cart=[];
+
+        function addToCart(Pink_Dress,$20){
+            const item={
+                name: Pink_Dress,
+                price:$20,
+            };
+            cart.push(item);
+            updateCartUI();
+        }
+        function updateCartUI(){
+            const cartList = document.getElementById('cart');
+            cartList.inner.html='';
+
+            cart.forEach(item =>{
+                const listItem= document.createElement('li');
+                listItem.textContent='${Pink.Dress}-$$($20.99.toFixed(2))';
+                cartList.appendChild(listItem);
+            });
+        }
+
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
