@@ -1,0 +1,345 @@
+/* Small screens */
+@media (max-width: 575.98px) {
+  /* Toggler */
+  .custom-margin {
+    margin-top: 20px !important;
+    margin-bottom: 15px !important;
+  }
+  .custom-margin-search {
+    margin-left: 1% !important;
+    padding-left: 5% !important;
+    margin-top: 20px !important;
+  }
+  #search-box{
+    width: 90% !important;
+  }
+  /* Featured products */
+  .glass-align {
+    width: 60%;
+    padding-top: 5% !important;
+    padding-bottom: 5% !important;
+  }
+  /* Logo & slogan */
+  .slogan {
+    top: 70% !important;
+    font-size: 5vw !important;
+  }
+  .text-style1 {
+    margin-left: 12vw;
+    margin-top: 20px;
+    letter-spacing: 5px;
+    font-size: 7vw !important;
+  }
+  .text-style2 {
+    margin-left: 8vw;
+    top: 11rem !important;
+    letter-spacing: 10px;
+    font-size: 7vw !important;
+  }
+  /* Cart */
+  #cart-col1-glass {
+    width: 90% !important;
+    margin-left: 5% !important;
+  }
+  #cart-col2-glass {
+    margin-left: 9% !important;
+    margin-right: 9% !important;
+    width: 85% !important;
+  }
+  /* Login */
+  #login-glass {
+    margin-top: 9% !important;
+  }
+  #login_btn {
+    margin-left: 50% !important;
+  }
+}
+
+/* Medium screens */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Toggler */
+  .custom-margin {
+    margin-top: 20px !important;
+    margin-bottom: 15px !important;
+  }
+  .custom-margin-search {
+    margin-left: 18% !important;
+    padding-left: 5% !important;
+    margin-top: 20px !important;
+  }
+  /* Cart */
+  #cart-col2-glass {
+    margin-left: 9% !important;
+    margin-right: 9% !important;
+    width: 85% !important;
+  }
+  /* Slogan */
+  .slogan {
+    font-size: 2rem !important;
+  }
+  /* Featured products */
+  #medium-screen {
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
+  }
+  /* Featured products */
+  #featured-products-glass {
+    width: 85% !important;
+  }
+}
+
+/* Font for logo */
+@font-face {
+  font-family: "Barcelony Signature";
+  src: url("../font/Barcelony.ttf") format("truetype");
+}
+
+
+/* index, header page */
+body {
+  background-image: url(../images/login_bg-min.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.RD-logo {
+  height: 40px;
+}
+.search-input-box {
+  padding-right: 23%;
+}
+#search-box::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+#search-box {
+  background-color: #d6dad7;
+  width: 25rem;
+
+}
+#nav-tab {
+  background: linear-gradient(
+    90deg,
+    hsla(132, 9%, 90%, 1) 0%,
+    hsla(150, 8%, 90%, 1) 49%,
+    hsla(132, 6%, 84%, 1) 100%
+  );
+}
+.banner {
+  width: 100%;
+  filter: opacity(0.9);
+}
+.image-banner {
+  position: relative;
+  text-align: center;
+}
+#logo-text {
+  color: chocolate;
+  text-shadow: 1px 2px 0.5vw rgb(85, 128, 184);
+}
+.text-style1 {
+  position: absolute;
+  font-family: "barcelony signature", cursive;
+  font-size: 50px;
+  font-weight: 800;
+  top: 6rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 10px;
+}
+.text-style2 {
+  position: absolute;
+  font-family: "barcelony signature", cursive;
+  font-size: 40px;
+  font-weight: 800;
+  top: 12rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 10px;
+}
+
+.slogan {
+  position: absolute;
+  top: 22rem;
+  font-family: monospace;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-variant: small-caps;
+  font-weight: 600;
+  color: azure;
+  text-shadow: 1px 1px 10px black;
+}
+
+/* Featured produdcts */
+#featured-products {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+#featured-products-glass {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 1%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+/* Products common styling: 
+allproducts, kidsDress, menAllProducts,
+menHoodies, menPants, menShirts, womenAllProducts,
+wemenDress, womenPants, womenSkirts, index-featured proudcts..
+ */
+.card-img-top {
+  height: 15rem;
+}
+#heading {
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+#glass {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 1%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 5%;
+}
+#cart-btn {
+  background-color: seagreen;
+  transition: 0.3s;
+  color: white;
+}
+#cart-btn:hover {
+  background-color: darkgreen;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Cart */
+#cart-col1-glass,
+#cart-col2-glass {
+  margin-top: 5%;
+  background: rgba(255, 255, 255, 0.45);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+#cart-col2-glass {
+  width: 20rem;
+  margin-left: 15%;
+}
+#cart-heading {
+  text-shadow: 1px 1px 5px black;
+  color: white;
+}
+.hr-cart {
+  width: 70%;
+  margin-left: 15%;
+}
+#btn-all {
+  margin-bottom: 10%;
+}
+#btn-all {
+  background-color: seagreen;
+  transition: 0.3s;
+  color: white;
+}
+#btn-all:hover {
+  background-color: darkgreen;
+  color: white;
+  transform: scale(1.1);
+}
+#delete-icon {
+  color: seagreen;
+  transition: 0.3s;
+}
+#delete-icon:hover {
+  color: darkgreen;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+#decrement,
+#increment {
+  background-color: seagreen;
+  transition: 0.3s;
+  color: white;
+}
+#decrement:hover,
+#increment:hover {
+  background-color: darkgreen;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Login page */
+#login-glass {
+  margin-left: 10%;
+  padding-right: 18%;
+  margin-top: 4rem;
+  height: 100%;
+  width: 80%;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.login-label {
+  font-weight: 600;
+}
+.login-heading {
+  padding-left: 30%;
+  text-shadow: 1px 1px 5px black;
+  color: white;
+}
+#login_btn {
+  background-color: seagreen;
+  transition: 0.3s;
+  color: white;
+  margin-left: 59%;
+  margin-bottom: 10%;
+}
+#login_btn:hover {
+  background-color: darkgreen;
+  color: white;
+  transform: scale(1.25);
+}
+
+/* Contact */
+#contact-png {
+  height: 350px;
+  width: 300px;
+}
+#contact-glass {
+  background: rgba(255, 255, 255, 0.45);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 5%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10%;
+}
+#contact-btn {
+  background-color: seagreen;
+  transition: 0.3s;
+  color: white;
+  margin-left: 44%;
+}
+#contact-btn:hover {
+  background-color: darkgreen;
+  color: white;
+  transform: scale(1.25);
+}
+#contact-heading {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+div a {
+  text-decoration: none;
+  color: white;
+}
