@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cart</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Cart page -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12" id="cart-col1-glass">
+          <h2 class="text-center mt-5" id="cart-heading">ITEMS IN CART</h2>
+          <hr class="hr-cart" />
+          <div class="row mt-5 mb-5 text-center">
+            <div class="col-lg-auto mb-3">
+              <img
+                class="ms-4"
+                src="https://m.media-amazon.com/images/I/81yCp+Z5YsL._AC_UY1000_.jpg"
+                height="200"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-3 col-sm-12 text-center">
+              <p class="fw-bold">Casual shoes</p>
+              <p class="">15$</p>
+              <i class="fa-solid fa-trash-can fa-xl mb-5" id="delete-icon"></i>
+            </div>
+            <div
+              class="col-lg-3 col-sm-12 me-3 d-flex justify-content-center align-items-center"
+            >
+              <button class="btn text-white" id="decrement">-</button>
+              <input class="w-50" type="number" />
+              <button class="btn text-white" id="increment">+</button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 col-sm-10 col-xs-10 ps-5 pe-5"
+          id="cart-col2-glass"
+        >
+          <h2 class="text-center mt-5" id="cart-heading">SUMMARY</h2>
+          <hr class="hr-cart" />
+          <div class="row">
+            <div class="col">
+              <p>Cart</p>
+              <p>Shipping</p>
+            </div>
+
+            <div class="col d-grid justify-content-end">
+              <p>15$</p>
+
+              <p>5$</p>
+            </div>
+            <hr />
+          </div>
+          <div class="row fw-bold">
+            <div class="col">
+              <p>Total</p>
+            </div>
+            <div class="col d-grid justify-content-end">
+              <p>20$</p>
+            </div>
+          </div>
+          <div class="row">
+            <button id="btn-all" onclick="checkout()" class="btn mt-5">
+              Checkout
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="code.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
